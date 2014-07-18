@@ -1,8 +1,6 @@
 <?php
 
-namespace GitPHPHooks;
-
-class Loader
+class GitHooksLoader
 {
 	/** @type string */
 	private $hook;
