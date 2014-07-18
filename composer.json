@@ -1,6 +1,6 @@
 {
     "name"        : "wcm/git-php-hooks",
-    "version"     : "0.2.0",
+    "version"     : "0.3.0",
     "description" : "Write git hooks with PHP, organize them on a per-project base and automatically add them",
 	"homepage"    : "https://github.com/wecodemore/GitPHPHooks",
 	"keywords"    : [ "git", "php", "hooks", "git hook" ],
@@ -16,10 +16,6 @@
 	},
 	"minimum-stability" : "dev",
 	"require"     : {
-		"php"                 : ">=5.3",
-		"composer/installers" : "~1.0"
-	},
-	"autoload"    : {
-		"classmap" : [ "src/" ]
+		"php" : ">=5.3"
 	}
 }
