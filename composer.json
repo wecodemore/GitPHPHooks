@@ -14,7 +14,7 @@
 	"support"     : {
 		"issues" : "https://github.com/wecodemore/GitPHPHooks/issues"
 	},
-	"minimum-stability" : "dev",
+	"minimum-stability" : "stable",
 	"require"     : {
 		"php" : ">=5.3"
 	}
