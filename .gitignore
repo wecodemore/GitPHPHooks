@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+
+## IDEs
+# PHPStorm
+.idea/
+# Sublime
+*.sublime-workspace
+
+/vendor/
+
+# Let's keep some folders so people get into it without a full setup
+!.gitkeep

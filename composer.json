@@ -1,0 +1,26 @@
+{
+    "name"        : "wcm/git-php-hooks",
+    "description" : "Write git hooks with PHP, organize them on a per-project base and automatically add them",
+	"homepage"    : "https://github.com/wecodemore/GitPHPHooks",
+	"keywords"    : [ "git", "php", "hooks", "git hook" ],
+    "license"     : "MIT",
+    "authors"     : [
+        {
+            "name"  : "Kaiser Franz Josef",
+            "email" : "wecodemore@gmail.com"
+        }
+    ],
+	"support"     : {
+		"issues" : "https://github.com/wecodemore/GitPHPHooks/issues"
+	},
+	"minimum-stability" : "dev",
+	"require"     : {
+		"php"                 : ">=5.3",
+		"composer/installers" : "~1.0"
+	},
+	"autoload"    : {
+		"psr-4" : {
+			"GitPHPHooks\\" : ""
+		}
+	}
+}
