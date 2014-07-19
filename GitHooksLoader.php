@@ -48,7 +48,7 @@ class GitHooksLoader
 		$this->sorted->rewind();
 
 		foreach ( $this->sorted as $it )
-			echo "FILTER: ".$this->sorted->current().PHP_EOL;
+			include_once $this->sorted->current();
 	}
 
 	/**
@@ -121,8 +121,8 @@ class GitHooksLoader
 				continue;
 
 			$sorted->insert(
-				$files->current(),
-				$priority[0]
+				   $files->current(),
+					   $priority[0]
 			);
 		}
 
