@@ -14,8 +14,11 @@
 	"support"     : {
 		"issues" : "https://github.com/wecodemore/GitPHPHooks/issues"
 	},
-	"minimum-stability" : "stable",
+	"minimum-stability" : "dev",
 	"require"     : {
 		"php" : ">=5.3"
+	},
+	"autoload"    : {
+		"classmap" : [ "" ]
 	}
 }
