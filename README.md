@@ -28,8 +28,8 @@ All your git hooks will have the same contents - only the target folder name wil
 	#!/usr/bin/php
 	<?php
 
-	include 'vendor/GitPHPHooks.php';
-	new \GitPHPHooks\Loader( __FILE__, 'git-hooks' );
+	include 'vendor/wcm/git-php-hooks/GitPHPHooks.php';
+	new \GitHooksLoader( __FILE__, 'git-hooks' );
 
 The first line is a _she bang_ to specify that we actually have a PHP file on the Command Line.
 The first argument for `\GitPHPHooks\Loader()` is the name of the current file to make the
