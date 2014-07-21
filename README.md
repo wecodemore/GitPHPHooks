@@ -25,13 +25,13 @@ That's it.
 
 All your git hooks will have the same contents - only the target folder name will (maybe) differ.
 
-	#!/usr/bin/php
+	#!/usr/bin/evn php
 	<?php
 
 	include 'vendor/wcm/git-php-hooks/GitPHPHooks.php';
 	new \GitHooksLoader( __FILE__, 'git-hooks' );
 
-The first line is a _she bang_ to specify that we actually have a PHP file on the Command Line.
+The first line is a _hashbang_ to specify that we actually have a PHP file on the Command Line.
 The first argument for `\GitPHPHooks\Loader()` is the name of the current file to make the
 current hook identifyable for GitPHPHooks. The second argument is the target location where your
 custom, pre-project Git PHP hook files for the current task are located.
