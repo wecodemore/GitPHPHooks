@@ -49,6 +49,10 @@ Sorting files is also done by file name.
 
 ### Example
 
+Before jumping on examples, I suggest that you simply take a look at the
+[GitPHPHooks Library repo](https://github.com/wecodemore/GitPHPHooksLibrary).
+You will find a PHPLint task and some others (hint: I happily accept pull requests!).
+
 A real world scenario
 
 > We want to run PHPLint before we commit
@@ -59,15 +63,21 @@ named `pre-commit_lint_10.php`. This file will automatically get added to your `
 where you called the `\GitPHPHooks\Loader()` like shown above. It will get added with a priority
 of 10. Then just put the following contents in your new file:
 
-	#!/usr/bin/php
+	#!/usr/bin/env php
 	<?php
 	$output = shell_exec( 'php -l' );
 	echo $output;
 	exit 1;
 
-Of course, above code is a very poor example. For a more detailed one, please take a look
-at [this GitHub Gist](https://github.com/sumocoders/snippets/blob/master/git/hooks/lint) by Sumocoders.
+Of course, above code is a very poor example. For a more detailed one, please refer to the library
+linked above.
 
 ## Install
 
 Add the repo to your stack. You can use Composer (w/o Satis as it's added to Packagist).
+Simply add
+
+    "wcm/git-php-hooks": "dev-master"
+
+to your `composer.json` file. GitHub has a service hook added to this repo to auto-update whenever
+this repo is updated.
