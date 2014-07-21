@@ -25,7 +25,7 @@ That's it.
 
 All your git hooks will have the same contents - only the target folder name will (maybe) differ.
 
-	#!/usr/bin/evn php
+	#!/usr/bin/env php
 	<?php
 
 	include 'vendor/wcm/git-php-hooks/GitPHPHooks.php';
