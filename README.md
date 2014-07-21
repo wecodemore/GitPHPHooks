@@ -49,7 +49,7 @@ Sorting files is also done by file name.
 
 ### Example
 
-A real world szenario
+A real world scenario
 
 > We want to run PHPLint before we commit
 
@@ -61,9 +61,9 @@ of 10. Then just put the following contents in your new file:
 
 	#!/usr/bin/php
 	<?php
-    $output = shell_exec( 'php -l' );
-    echo $output;
-    exit 1;
+	$output = shell_exec( 'php -l' );
+	echo $output;
+	exit 1;
 
 Of course, above code is a very poor example. For a more detailed one, please take a look
 at [this GitHub Gist](https://github.com/sumocoders/snippets/blob/master/git/hooks/lint) by Sumocoders.
