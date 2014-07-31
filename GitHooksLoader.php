@@ -103,7 +103,8 @@ class GitHooksLoader
 
 	/**
 	 * Sorts files by the first `int` in the file name
-	 * and adds them to a `\SplPriorityQueue
+	 * and adds them to a `\SplPriorityQueue`.
+	 * Files without a priority are ignored to allow easy disabling.
 	 * @param  \Iterator $files
 	 * @return \SplPriorityQueue
 	 */
@@ -121,8 +122,8 @@ class GitHooksLoader
 				continue;
 
 			$sorted->insert(
-				   $files->current(),
-					   $priority[0]
+				$files->current(),
+				$priority[0]
 			);
 		}
 
