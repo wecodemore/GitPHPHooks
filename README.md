@@ -67,7 +67,8 @@ of 10. Then just put the following contents in your new file:
 	<?php
 	$output = shell_exec( 'php -l' );
 	echo $output;
-	exit 1;
+	if ( $output === 1 )
+		exit 1;
 
 Of course, above code is a very poor example. For a more detailed one, please refer to the library
 linked above.

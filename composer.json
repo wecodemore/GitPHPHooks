@@ -18,6 +18,9 @@
 	"require"     : {
 		"php" : ">=5.3"
 	},
+	"suggest": {
+		"wcm/git-php-hooks-library": "A convenient library of pre made hooks and tasks."
+	},
 	"autoload"    : {
 		"classmap" : [ "" ]
 	}
