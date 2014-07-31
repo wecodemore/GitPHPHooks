@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class GitHooksLoader
+ * @package WCM\GitPHPHooks
+ */
 class GitHooksLoader
 {
 	/** @type string */
@@ -27,7 +31,8 @@ class GitHooksLoader
 		$this->setHook( $hook );
 		$this->setLocation( $location );
 
-		$this->process();
+		$this->prepare();
+		$this->load();
 	}
 
 	/**
@@ -36,7 +41,7 @@ class GitHooksLoader
 	 * where the file name contains the current hook name
 	 * and sorts them by the first integer found in the file name.
 	 */
-	public function process()
+	public function prepare()
 	{
 		$this->fetched = $this->fetch( $this->location );
 		$this->fetched->rewind();
@@ -46,7 +51,13 @@ class GitHooksLoader
 
 		$this->sorted = $this->sort( $this->filtered );
 		$this->sorted->rewind();
+	}
 
+	/**
+	 * Loads the pre sorted files
+	 */
+	public function load()
+	{
 		foreach ( $this->sorted as $it )
 			include_once $this->sorted->current();
 	}
@@ -88,7 +99,7 @@ class GitHooksLoader
 	}
 
 	/**
-	 * Filters them to only include PHP files
+	 * Filters the file list to only include PHP files
 	 * where the file name contains the current hook name
 	 * @param  \Iterator $files
 	 * @return \RegexIterator
