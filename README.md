@@ -1,8 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/wcm/git-php-hooks/v/stable.svg)](https://packagist.org/packages/wcm/git-php-hooks) [![Total Downloads](https://poser.pugx.org/wcm/git-php-hooks/downloads.svg)](https://packagist.org/packages/wcm/git-php-hooks) [![License](https://poser.pugx.org/wcm/git-php-hooks/license.svg)](https://packagist.org/packages/wcm/git-php-hooks)
+
 # Git PHP Hooks
 
 Write your git hooks in PHP, organize them on a per project base and attach them automatically.
-
-[![Latest Stable Version](https://poser.pugx.org/wcm/git-php-hooks/v/stable.svg)](https://packagist.org/packages/wcm/git-php-hooks) [![Total Downloads](https://poser.pugx.org/wcm/git-php-hooks/downloads.svg)](https://packagist.org/packages/wcm/git-php-hooks) [![License](https://poser.pugx.org/wcm/git-php-hooks/license.svg)](https://packagist.org/packages/wcm/git-php-hooks)
 
 ## Git Hooks
 
@@ -74,6 +74,34 @@ of 10. Then just put the following contents in your new file:
 
 Of course, above code is a very poor example. For a more detailed one, please refer to the library
 linked above.
+
+## Grunt integration
+
+It can easily be integrated with grunt via [`grunt-githooks`](https://github.com/wecodemore/grunt-githooks),
+originally written by [@rhumaric](https://github.com/rhumaric/).
+
+Setup your `grunt-githooks` task like this:
+
+	php : {
+		options      : {
+			hashbang    : '#!/usr/bin/env php',
+			startMarker : '\n<?php',
+			template    : './templates/git-php-hooks.tmpl.hb'
+		},
+		'pre-push'   : 'none'
+	}
+
+Then just add your hooked tasks to your project and use the following template:
+
+	include 'vendor/wcm/git-php-hooks/GitHooksLoader.php';
+	new \GitHooksLoader( __FILE__, 'vendor/wcm/git-php-hooks-library/src' );
+
+This example is assuming that you are using the
+[GitPHPHooksLibrary](https://github.com/wecodemore/GitPHPHooksLibrary).
+The template in this case would be located inside a `templates` directory in the root folder
+of your project and be named `git-php-hooks.tmpl.hb`. It's important to set the hooks names
+value to `none` as GitPHPHooks doesn't need a task name as it identifies tasks by the filename 
+by itself.
 
 ## Install
 
