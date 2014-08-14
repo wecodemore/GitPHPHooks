@@ -34,7 +34,7 @@ All your git hooks will have the same contents - only the target folder name wil
 	new \GitHooksLoader( __FILE__, 'git-hooks' );
 
 The first line is a _hashbang_ to specify that we actually have a PHP file on the Command Line.
-The first argument for `\GitPHPHooks\Loader()` is the name of the current file to make the
+The first argument for `\GitHooksLoader()` is the name of the current file to make the
 current hook identifyable for GitPHPHooks. The second argument is the target location where your
 custom, pre-project Git PHP hook files for the current task are located.
 
