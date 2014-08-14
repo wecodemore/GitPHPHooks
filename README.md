@@ -30,7 +30,7 @@ All your git hooks will have the same contents - only the target folder name wil
 	#!/usr/bin/env php
 	<?php
 
-	include 'vendor/wcm/git-php-hooks/GitPHPHooks.php';
+	include 'vendor/wcm/git-php-hooks/GitHooksLoader.php';
 	new \GitHooksLoader( __FILE__, 'git-hooks' );
 
 The first line is a _hashbang_ to specify that we actually have a PHP file on the Command Line.
