@@ -62,7 +62,7 @@ A real world scenario
 Add a new file named `pre-commit` in your `.git/hooks` directory. Then add a new directory in the
 root folder of your project/repository, named i.e. `git-hooks`. In there, add a new PHP file
 named `pre-commit_lint_10.php`. This file will automatically get added to your `pre-commit` hook
-where you called the `\GitPHPHooks\Loader()` like shown above. It will get added with a priority
+where you called the `\GitHooksLoader()` like shown above. It will get added with a priority
 of 10. Then just put the following contents in your new file:
 
 	#!/usr/bin/env php
