@@ -3,6 +3,7 @@
 <p style="text-align:center;">
 [![Latest Stable Version](https://poser.pugx.org/wcm/git-php-hooks/v/stable.svg)](https://packagist.org/packages/wcm/git-php-hooks) [![Total Downloads](https://poser.pugx.org/wcm/git-php-hooks/downloads.svg)](https://packagist.org/packages/wcm/git-php-hooks) [![License](https://poser.pugx.org/wcm/git-php-hooks/license.svg)](https://packagist.org/packages/wcm/git-php-hooks)
 </p>
+
 Write your git hooks in PHP, organize them on a per project base and attach them automatically.
 
 ## Git Hooks
