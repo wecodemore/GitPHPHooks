@@ -6,12 +6,14 @@ Write your git hooks in PHP, organize them on a per project base and attach them
 
 ## Git Hooks
 
+> Hooks are little scripts you can place in `$GIT_DIR/hooks` directory to trigger action at certain points. 
+
 There're two types of git hooks:
 
  1. pre-push (runs client side)
  1. post-push (runs server side)
 
-For more info on Git Hooks, please consult your favorite search engine.
+For more info on Git Hooks, please [take a look at the official docs](http://git-scm.com/docs/githooks) - they are quite good.
 
 ## How to
 
