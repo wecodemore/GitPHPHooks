@@ -99,7 +99,7 @@ originally written by [@rhumaric](https://github.com/rhumaric/).
 
 Setup your `grunt-githooks` task like this:
 
-```json
+```javascript
 php : {
 	options      : {
 		hashbang    : '#!/usr/bin/env php',
