@@ -28,7 +28,7 @@ It's really easy:
 
  1. Add a folder to your project/repository. The name doesn't matter, as you have to specify
  it when triggering `GitPHPHooks`. The name in the following example is `'project-hooks'`. (Hint: Not having a name allows you to customize and organize it as you like. It also allows `git clone`ing into a project specific directory.)
- 1. Open you `.git/hooks` directory and add a new Git hook file. For example: `pre-commit`
+ 1. Open your `.git/hooks` directory and add a new Git hook file. For example: `pre-commit`
  (without file extension).
  1. Add a new PHP file to the newly created custom Git hooks folder (again, `'project-hooks'` in the example) that performs the task you want.
 
