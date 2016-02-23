@@ -2,7 +2,8 @@
 [![Latest Git Release](https://img.shields.io/github/tag/wecodemore/GitPHPHooks.svg?style=flat-square)](https://github.com/wecodemore/GitPHPHooks/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/wcm/git-php-hooks.svg?style=flat-square)](https://packagist.org/packages/wcm/git-php-hooks)
 [![License](https://img.shields.io/packagist/l/wcm/git-php-hooks.svg?style=flat-square)](https://packagist.org/packages/wcm/git-php-hooks)
-![GitHub Stars](https://img.shields.io/github/stars/wecodemore/GitPHPHooks.svg?style=flat-square)
+[![GitHub Stars](https://img.shields.io/github/stars/wecodemore/GitPHPHooks.svg?style=flat-square)](https://github.com/wecodemore/GitPHPHooks/stargazers)
+
 
 ![Git Logo](http://i.imgur.com/qzvwT4C.png)
 
