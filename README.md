@@ -136,3 +136,13 @@ Simply add
 
 to your `composer.json` file. GitHub has a service hook added to this repo to auto-update whenever
 this repo is updated. The `^1.0` version number will bring you all patches without breaking anything.
+
+To add the repository to the dev-part of the stack in `composer.json`, the following command can be typed in the prompt (assuming composer is in your PATH or aliased ).
+
+    composer require --dev --prefer-dist -- wcm/git-php-hooks
+
+wcm/git-php-hooks suggests installing a library of pre made hooks and tasks, wcm/git-php-hooks-library . To add this with composer the following can be used:
+
+    composer require --dev --prefer-dist -- wcm/git-php-hooks-library
+
+
